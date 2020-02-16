@@ -1,0 +1,10 @@
+{% extends 'dscbvp/base.html' %}
+{% block content %}
+{% if form %}
+	<form method="POST">
+		{% csrf_token %}
+		{{ form.as_p }}
+		<button type="submit">Submit</button>
+	</form>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends 'app/base.html' %}
+{% block content %}
+<style type="text/css">
+	
+	h2, a, ul{
+		margin-left: 20px;
+		font-family: 'Raleway', sans-serif;
+	}
+
+</style>
+<br><br><br><br><br>
+<h2>List of questions</h2>
+<ul>
+{% for li in list %}
+	<li>
+		<h4>{{ li.question }}</h4>
+		<p>{{ li.answer }}</p>
+	</li>
+{% endfor %}
+</ul>
+{% endblock %}

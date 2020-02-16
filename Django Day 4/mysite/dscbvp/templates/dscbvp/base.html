@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DSC BVP Pune</title>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+<style type="text/css">
+	
+	body{
+		margin: 0;
+		overflow-x: hidden;
+	}
+
+	.header{
+		width: 100vw;
+		height: 12vh;
+		position: absolute;
+		top: 0;
+		background: #15171c;
+	}
+
+	.header-title{
+		position: absolute;
+		top: 50%;
+		font-size: 26px;
+		left: 12%;
+		transform: translate(-50%, -50%);
+		color: #fff;
+		font-family: "Product Sans";
+	}
+
+	.footer{
+		position: absolute;
+		bottom: 0;
+		width: 100vw;
+		height: 12vh;
+		background: #e74c3c;
+	}
+
+	.footer-text{
+		position: absolute;
+		top: 50%;
+		font-size: 26px;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		color: #fff;
+		font-family: "Product Sans";
+	}
+
+	.content{
+		position: absolute;
+		top: 25vh;
+		left: 20%;
+		transform: translate(-50%, -50%);
+	}
+
+</style>
+<body>
+<div class="header">
+	<div class="header-title">DSC BVP Pune</div>
+</div>
+<br><br>
+<div class="content">
+	{% block content %}
+	{% endblock %}
+</div>
+<br><br>
+<div class="footer">
+	<div class="footer-text">Dewansh Rawat</div>
+</div>
+</body>
+</html>

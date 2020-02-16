@@ -1,0 +1,17 @@
+{% extends 'app/base.html' %}
+{% block content %}
+<style type="text/css">
+	
+	h2, a{
+		margin-left: 20px;
+		font-family: 'Raleway', sans-serif;
+	}
+
+</style>
+<br><br><br><br><br>
+<h2>This is the home screen of XanOS</h2>
+<br><br>
+<a href="{% url 'question' %}">Question</a>
+<br>
+<a href="{% url 'list' %}">List</a>
+{% endblock %}
