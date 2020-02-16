@@ -1,5 +1,5 @@
 # Backend 101
-The code demonstrated in the hands on session of Frontend 101.
+The code demonstrated in the hands on session of Backend 101.
 
 # Usage
 - Clone the repository by using  ```git clone``` or directly from the browser.
