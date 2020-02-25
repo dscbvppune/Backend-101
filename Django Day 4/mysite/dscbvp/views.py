@@ -42,7 +42,7 @@ def attendees(request):
 
 
 def attendee_details(request):
-	if request.method == 'POST':-
+	if request.method == 'POST':
 		payload = json.loads(request.body)
 		tempEmail = payload["email"]
 		tempObj = Attendee.objects.get(email=tempEmail)
